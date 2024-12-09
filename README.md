@@ -45,15 +45,26 @@ output f1;
 assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
 endmodule
 ```
+```
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
+```
 
 **RTL realization**
 
 **Output:**
 ![Screenshot (80)](https://github.com/user-attachments/assets/65349cd9-f767-455f-96d7-9943f9a69d32)
+![Screenshot (82)](https://github.com/user-attachments/assets/b1526d40-1ba4-47fd-95bd-1bd0329a3be5)
+
 
 
 **RTL**
 ![Screenshot (81)](https://github.com/user-attachments/assets/287a5a56-de40-46dc-92d5-3a26bae4b890)
+![Screenshot (85)](https://github.com/user-attachments/assets/360518d6-1051-4c17-a3a8-f2783fa4170d)
+
 
 
 **Timing Diagram**
